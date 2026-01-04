@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owner Dashboard | Siliguri Stay</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (
+      localStorage.getItem("userRole") !== "owner" ||
+      localStorage.getItem("isOwnerVerified") !== "true"
+    ) {
+      location.href = "owner-auth.html";
+    }
+  </script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo-area">
+    <div class="logo-icon">SS</div>
+    <div class="brand-text">
+      <span class="title">Siliguri Stay</span>
+      <span class="subtitle">Owner Panel</span>
+    </div>
+  </div>
+  <button class="btn-register" onclick="logoutUser()">Logout</button>
+</header>
+
+<section class="owner-dashboard">
+  <h1>My PGs</h1>
+
+  <div class="owner-pg-card">
+    <h3>Green View PG</h3>
+    <p>Status: Live</p>
+    <p>Available Beds: 2</p>
+    <p>Rating: ⭐ 4.5</p>
+    <p>Rank: #4</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
