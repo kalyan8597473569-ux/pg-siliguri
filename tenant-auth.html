@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tenant Login | Siliguri Stay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+<div class="login-container">
+ <img src="logo.png" alt="Siliguri Stay Logo" class="auth-logo">
+
+  <h1>Tenant Login / Register</h1>
+
+  <div class="auth-box">
+    <h3>New Tenant</h3>
+    <input id="tName" placeholder="Full Name">
+    <input id="tPhone" placeholder="WhatsApp Number">
+    <button onclick="registerTenant()">Register</button>
+  </div>
+
+  <hr>
+
+  <div class="auth-box">
+    <h3>Already Registered</h3>
+    <input id="loginPhone" placeholder="WhatsApp Number">
+    <button onclick="loginTenant()">Login</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

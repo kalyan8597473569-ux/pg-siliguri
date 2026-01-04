@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owner Login | Siliguri Stay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+<div class="login-container">
+<img src="logo.png" alt="Siliguri Stay Logo" class="auth-logo">
+
+  <h1>PG Owner Access</h1>
+
+  <div class="auth-box">
+    <h3>Register as Owner</h3>
+    <input id="oName" placeholder="Owner Name">
+    <input id="oPhone" placeholder="WhatsApp Number">
+    <input id="ownerId" placeholder="Owner ID (Required)">
+    <button onclick="registerOwner()">Register</button>
+    <small>Owner ID is issued after PG approval</small>
+  </div>
+
+  <hr>
+
+  <div class="auth-box">
+    <h3>Owner Login</h3>
+    <input id="loginOwnerPhone" placeholder="WhatsApp Number">
+    <button onclick="loginOwner()">Login</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
